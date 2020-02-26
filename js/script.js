@@ -1,3 +1,5 @@
+/* Owl Carousal */
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
@@ -20,3 +22,17 @@ $('.owl-carousel').owlCarousel({
       }
     }
   })
+/** Smooth Scroll */
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500,
+    speedAsDuration: true
+  });
+
+
+  /** Navbar Scroll */
+  $(function() {
+    $(document).scroll(function() {
+          var $nav = $("nav");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});

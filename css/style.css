@@ -53,6 +53,7 @@
 }
 .navbar .navbar-brand {
     color: #fff !important;
+    font-weight: 600;
 }
 .navbar .navbar-toggler {
     border: none;
@@ -60,6 +61,15 @@
 }
 .navbar-toggler .fa {
     color: #fff;
+}
+.scrolled li a {
+    color: #000 !important;
+}
+.scrolled .navbar-brand {
+    color: #000 !important;
+}
+.scrolled .navbar-toggler .fa {
+    color: #000;
 }
 #carouselExampleIndicators {
     height: 100vh !important;
@@ -182,7 +192,7 @@ Footer */
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#26272b !important;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -276,7 +286,8 @@ Footer */
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  margin-right: 20px;
 }
 .social-icons li
 {
