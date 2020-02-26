@@ -75,14 +75,14 @@
         height: 40vh !important;
     }
 }
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     #carouselExampleIndicators {
         height: 40vh !important;
     }
     .carousel-inner{
         height: 40vh !important;
     }
-}
+} */
 #about {
     padding: 50px 0;
 }
