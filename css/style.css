@@ -4,7 +4,7 @@
 }
 :root {
     --background-color: #f7f6ee;
-    --secondary-color: #fbfefb;
+    --secondary-color: #e2e2e2;
     --text-dark: #101010;
     --text: #333333;
     --text-light: #7b7b85;
@@ -84,8 +84,11 @@
     }
 }
 
-#about {
-    padding: 50px 0;
+#about, #portfolio {
+    padding: 70px 0;
+}
+#about .title {
+    margin-bottom: 40px;
 }
 .title::before {
     content: '';
@@ -106,4 +109,15 @@
     margin-right: auto;
     display: block;
     transform: translateY(0px);
+}
+
+.about-text {
+    margin-top: 100px;
+}
+.about-img {
+    border-radius: 25px;
+    height: 450px !important;
+}
+.grey-bg {
+    background: var(--secondary-color);
 }
