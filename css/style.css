@@ -84,7 +84,7 @@
     }
 }
 
-#about, #portfolio {
+#about, #portfolio, #service, #contact, footer {
     padding: 70px 0;
 }
 #about .title {
@@ -94,7 +94,7 @@
     content: '';
     background: #6c6d71;
     height: 5px;
-    width: 200px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -104,7 +104,7 @@
     content: '';
     background: #6c6d71;
     height: 10px;
-    width: 50px;
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -120,4 +120,59 @@
 }
 .grey-bg {
     background: var(--secondary-color);
+}
+
+/*---------------- Portfolio --------------------*/
+.card {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.card-img-top {
+    height: 150px;
+    width: 150px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------- services-------------------------*/
+.carousel-wrap {
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  .owl-carousel .item img {
+    border-radius: 25px;
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  /*----------------contact-----------*/
+  .contact-list {
+      margin-top: 35px;
+      text-align: left;
+      font-size: 25px;
+      list-style: none;
+  }
+.contact-list li a {
+    text-decoration: none;
+    color: var(--text);
 }
