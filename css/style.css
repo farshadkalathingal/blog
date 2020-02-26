@@ -18,7 +18,7 @@
   /* Sample css for an element */
   body {
     background: var(--background-color);
-    color: var(--text);
+    color: var(--text) !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,Verdana, sans-serif !important;
   }
 
@@ -67,7 +67,7 @@
 .carousel-inner{
     height: 100vh !important;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     #carouselExampleIndicators {
         height: 40vh !important;
     }
