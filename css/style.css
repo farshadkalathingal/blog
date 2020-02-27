@@ -1,69 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --background-color: #f7f6ee;
-  --secondary-color: #e2e2e2;
-  --text-dark: #101010;
-  --text: #333333;
-  --text-light: #7b7b85;
-  --text-lighter: #ababab;
-  --blue: #3498db;
-  --green: #27ae60;
-  --yellow: #feca57;
-  --red: #c0392b;
-  --white: #ffffff;
-} 
-/* Sample css for an element */
+ 
+@import "./_global.css";
+
+ /* Sample css for an element */
 body {
-  /* background: var(--background-color);
-  color: var(--text) ; */
+  background: var(--background-color);
+  color: var(--text) ; 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,Verdana, sans-serif !important;
 }
-
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: var(--background-color) !important;
-      color: var(--text) !important;
-  }
-  .grey-bg {
-    background: var(--secondary-color);
+.grey-bg {
+  background: var(--secondary-color);
 }
-
-}
-
-@media (prefers-color-scheme: dark) {
-   :root {
-      --background-color: #1e1f23;
-      --secondary-color: #232428;
-      --text-dark: #efefef;
-      --text: #c4c5c9;
-      --text-light: #6c6d71;
-      --text-lighter: #8e8f93;
-    } 
-    body {
-      background-color: var(--background-color) !important;
-      color: var(--text) !important;
-  }
-  .grey-bg {
-    background: var(--secondary-color);
-}
-}
-#banner {
+#banner, #home {
   top: 0;
 }
-.navbar {
-  position: absolute;
-  z-index: 999;
-  background-color: transparent;
-}
 .navbar li a{
-  color: #fff !important;
+  color: var(--background-color) !important;
   font-weight: 400 !important;
 }
 .navbar .navbar-brand {
-  color: #fff !important;
+  color: var(--background-color) !important;
   font-weight: 600;
 }
 .navbar .navbar-toggler {
@@ -71,16 +26,16 @@ body {
   outline: none;
 }
 .navbar-toggler .fa {
-  color: #fff;
+  color: var(--background-color);
 }
 .scrolled li a {
-  color: #000 !important;
+  color: var(--text-dark) !important;
 }
 .scrolled .navbar-brand {
-  color: #000 !important;
+  color: var(--text-dark) !important;
 }
 .scrolled .navbar-toggler .fa {
-  color: #000;
+  color: var(--text-dark);
 }
 #carouselExampleIndicators {
   height: 100vh !important;
@@ -106,7 +61,7 @@ body {
 }
 
 #about, #portfolio, #service, #contact, footer {
-  padding: 70px 0;
+  padding: 10rem 0;
 }
 #about .title {
   margin-bottom: 40px;
@@ -139,9 +94,7 @@ body {
   border-radius: 25px;
   height: 450px !important;
 }
-.grey-bg {
-  background: var(--secondary-color);
-}
+
 
 /*---------------- Portfolio --------------------*/
 .card {
@@ -149,6 +102,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 2rem 0;
+  background-color: var(--background-color);
+  border: var(--text) 1px solid;
 }
 .card-img-top {
   height: 150px;
@@ -170,21 +126,38 @@ body {
   z-index: 100; 
   -webkit-backface-visibility: hidden; 
 }
-.owl-carousel .item img {
-  border-radius: 25px;
+
+.owl-carousel .client {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+  border-radius: 1px;
+}
+.owl-carousel .client .client-img { 
+  padding: 1rem;
+}
+.owl-carousel .client .client-img img {
+  height: 7rem;
+  width: 7rem;
+}
+.owl-carousel .client .about-client {
+  padding-top: 2rem;
+}
+.owl-carousel .client .about-client h4 {
+  font: normal 500 21px/ 20px;
+}
+.owl-carousel .client .about-client p {
+  font-size: 14px;
+}
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+.owl-nav {
+  display: none;
 }
 
-/* end fix */
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
-}
-
-.owl-nav i {
-  font-size: 52px;
-}
 
 /*----------------contact-----------*/
 .contact-list {
