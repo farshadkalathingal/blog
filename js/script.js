@@ -33,3 +33,6 @@ $('.owl-carousel').owlCarousel({
           $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+
+
+new WOW().init();
