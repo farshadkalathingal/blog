@@ -1,11 +1,12 @@
- 
+@import "./fonts.css";
 @import "./_global.css";
+
 
  /* Sample css for an element */
 body {
   background: var(--background-color);
   color: var(--text) ; 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,Verdana, sans-serif !important;
+  font-family: var(--mobirise) !important;
 }
 .grey-bg {
   background: var(--secondary-color);
