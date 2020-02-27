@@ -1,5 +1,7 @@
-@import "./fonts.css";
-@import "./_global.css";
+/* @import "./fonts.css";
+@import "./_global.css"; */
+
+@import url(./_global.css);
 
 
  /* Sample css for an element */
