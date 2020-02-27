@@ -1,7 +1,7 @@
 /* @import "./fonts.css";
 @import "./_global.css"; */
-
-@import url(./_global.css);
+/* 
+@import url(./_global.css); */
 * {
   margin: 0;
   padding: 0;
