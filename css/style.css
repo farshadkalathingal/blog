@@ -472,6 +472,31 @@ background-color:#FCAF45
 }
 }
 
+/* Floating button */
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:30px;
+	right:30px;
+	background-color:var(--text);
+	color:var(--background-color);
+	border-radius:50px;
+  text-align:center;
+  z-index: 999;
+}
+
+.my-float{
+  margin-top:7px;
+  font-size: 1.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.my-float:hover {
+  margin-top: 5px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 
 
 
@@ -498,7 +523,7 @@ background-color:#FCAF45
   padding: 3rem 0;
 }
   .title {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
   .about-text {
     margin-top: 0px;
