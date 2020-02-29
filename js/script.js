@@ -16,6 +16,9 @@ $('.owl-carousel').owlCarousel({
       },
       600: {
         items: 2
+      },
+      1000: {
+        items: 2
       }
     }
   })
@@ -35,7 +38,6 @@ $('.owl-carousel').owlCarousel({
 });
 
 /**Wow Animation */
-new WOW().init();
 
 /** Hero-section animatio */
 
