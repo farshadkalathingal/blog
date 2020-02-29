@@ -552,7 +552,9 @@ background-color:#FCAF45
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-
+.float .fa-angle-down {
+  margin-top: 7px;
+}
 
 
 /* Media Screen Sizes */
