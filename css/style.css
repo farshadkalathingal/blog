@@ -127,6 +127,14 @@ body {
   height: 100vh;
 }
 
+.navbar {
+  /* padding: 20px; */
+  padding: 1rem 1rem;
+  -webkit-transition:background .5s ease-in-out,padding .5s ease-in-out;
+	-moz-transition:background .5s ease-in-out,padding .5s ease-in-out;
+	transition:background .5s ease-in-out,padding .5s ease-in-out;
+}
+
 .navbar li a{
   color: var(--background-color) !important;
   font-weight: 400 !important;
@@ -143,6 +151,7 @@ body {
   color: var(--background-color);
 }
 .scrolled {
+  padding: .5rem 1rem;
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 15px 2px #000000;
 }
