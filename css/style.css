@@ -65,14 +65,14 @@ body {
   top: 100%;
   left: 50%;
   transform: translate(-50%, 30vh);
-  color: var(--text-dark);
+  color: #fff;
 }
 .hero-text h2 {
   font-size: 1.5rem;
 }
 .hero-text h2::after {
   content: '';
-  background: var(--text-dark);
+  background: #fff;
   height: 3px;
   width: 50px;
   margin-left: 55px;
@@ -81,7 +81,7 @@ body {
 }
 .hero-text h1 {
   font-weight: 600;
-  text-shadow: 2px 4px var(--secondary-color);
+  text-shadow: 2px 4px rgb(56, 56, 56);
   font-size: 4rem;
 }
 .hero-text h4 {
