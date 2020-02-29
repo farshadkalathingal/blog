@@ -254,6 +254,9 @@ body {
 }
 
 /*---------------- Portfolio --------------------*/
+
+
+
 .card {
   margin-top: 50px;
   margin-left: auto;
@@ -275,6 +278,13 @@ body {
 }
 
 /*--------------- services-------------------------*/
+
+.service-text {
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+
 .carousel-wrap {
   margin-top: 50px;
   position: relative;
@@ -336,6 +346,15 @@ body {
 .contact-list .fa {
   padding: 5px;
 }
+
+iframe {
+  border-radius: 5px;
+}
+
+
+
+
+
 /* 
 Footer */
 
@@ -571,7 +590,7 @@ background-color:#FCAF45
 }
 
 #about, #portfolio, #service, #contact, footer {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
   .title {
     font-size: 3.7rem;

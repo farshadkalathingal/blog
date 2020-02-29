@@ -37,6 +37,16 @@ $('.owl-carousel').owlCarousel({
     });
 });
 
+$(document).scroll(function() {
+  if($(this).scrollTop() > $('nav').height()) {
+  $('.float').attr('href','#home');
+  $('.my-float').attr('class', 'fa fa-angle-up my-float');
+  // $('.my-float').attr('class',$('.my-float').attr('class') == 'fa-angle-down' ? 'fa-angle-up' : 'fa-angle-down');
+  } else {
+    $('.float').attr('href','#about');
+    $('.my-float').attr('class', 'fa fa-angle-down my-float');
+  }
+});
 /**Wow Animation */
 //$( ".wow" ).addClass( "zoomIn" );
 var wow = new WOW(
@@ -58,7 +68,7 @@ wow.init();
 
 /** Hero-section animatio */
 
-$('.hero-image').mousemove(function(e){
+$('.card-img-overlay').mousemove(function(e){
   var moveX = (e.pageX * -1 / 15);
   var moveY = (e.pageY * -1 / 15);
   $(this).css('background-position', moveX + 'px ' + moveY + 'px ');
