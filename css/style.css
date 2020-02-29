@@ -54,21 +54,34 @@ body {
 }
 .hero-image {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('back-hero2.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('back-hero2.jpg');
   overflow: hidden;
   background-size: 110% 110%;
   background-repeat: no-repeat;
-  
+   */
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hero-image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
 }
 .hero-text {
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 30vh);
+  transform: translate(-50%, -30vh);
   color: #fff;
 }
 .hero-text h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .hero-text h2::after {
   content: '';
@@ -81,11 +94,11 @@ body {
 }
 .hero-text h1 {
   font-weight: 600;
-  text-shadow: 2px 4px rgb(56, 56, 56);
-  font-size: 4rem;
+  text-shadow: 2px 2px rgb(131, 131, 131);
+  font-size: 6rem;
 }
 .hero-text h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .navbar li a{
   color: var(--background-color) !important;
@@ -465,8 +478,11 @@ background-color:#FCAF45
 .hero-image {
   height: 40vh !important;
 }
+.hero-image video {
+  height: 40vh;
+}
 .hero-text {
-  transform: translate(-70%, 10vh);
+  transform: translate(-70%, -10vh);
 }
 
 #about, #portfolio, #service, #contact, footer {
