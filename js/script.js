@@ -38,7 +38,7 @@ $('.owl-carousel').owlCarousel({
 });
 
 /**Wow Animation */
-$( ".wow" ).addClass( "zoomIn" );
+//$( ".wow" ).addClass( "zoomIn" );
 var wow = new WOW(
 {
 boxClass:     'wow',      // animated element css class (default is wow)
