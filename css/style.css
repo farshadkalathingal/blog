@@ -54,11 +54,38 @@ body {
 }
 .hero-image {
   height: 100vh;
-  background-image: url('back-hero2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('back-hero2.jpg');
   overflow: hidden;
   background-size: 110% 110%;
   background-repeat: no-repeat;
   
+}
+.hero-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 30vh);
+  color: var(--text-dark);
+}
+.hero-text h2 {
+  font-size: 1.5rem;
+}
+.hero-text h2::after {
+  content: '';
+  background: var(--text-dark);
+  height: 3px;
+  width: 50px;
+  margin-left: 55px;
+  display: block;
+  transform: translateY(-10px);
+}
+.hero-text h1 {
+  font-weight: 600;
+  text-shadow: 2px 4px var(--secondary-color);
+  font-size: 4rem;
+}
+.hero-text h4 {
+  font-size: 1rem;
 }
 .navbar li a{
   color: var(--background-color) !important;
@@ -253,7 +280,7 @@ Footer */
 
 .site-footer
 {
-background-color:#26272b !important;
+background-color: var(--secondary-color);
 padding:45px 0 20px;
 font-size:15px;
 line-height:24px;
@@ -435,11 +462,18 @@ background-color:#FCAF45
 .hero-image {
   height: 40vh !important;
 }
+.hero-text {
+  transform: translate(-70%, 10vh);
+}
+
 #about, #portfolio, #service, #contact, footer {
   padding: 3rem 0;
 }
   .title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+  }
+  .about-text {
+    margin-top: 0px;
   }
   .zoom-effect-container {
     height: 350px;
