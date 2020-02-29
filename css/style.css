@@ -24,7 +24,7 @@
   --mobirise: 'mobirise';
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
       --background-color: #f7f6ee;
       --secondary-color: #e2e2e2;
@@ -41,7 +41,7 @@
 
       --mobirise: 'mobirise';
     }
-}
+} */
 
 
 @media (prefers-color-scheme: dark) {
@@ -76,6 +76,7 @@ body {
   background-size: 110% 110%;
   background-repeat: no-repeat;
    */
+   width: 100%;
    overflow: hidden;
    display: flex;
    justify-content: center;
