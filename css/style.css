@@ -153,9 +153,18 @@ body {
 .title {
   font-weight: 900;
   font-size: 10rem;
-  opacity: 0.1;
 }
 
+.title span {
+  margin-right: -3%;
+  opacity: 0.05;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.title span:hover {
+  opacity: 1;
+}
 
 /* .title::before {
   content: '';
@@ -479,7 +488,7 @@ background-color:#FCAF45
   height: 40vh !important;
 }
 .hero-image video {
-  height: 40vh;
+  height: 40vh !important;
 }
 .hero-text {
   transform: translate(-70%, -10vh);
