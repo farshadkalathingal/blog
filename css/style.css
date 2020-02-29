@@ -7,6 +7,23 @@
   padding: 0;
 }
 
+:root {
+  --background-color: #f7f6ee;
+  --secondary-color: #e2e2e2;
+  --text-dark: #101010;
+  --text: #333333;
+  --text-light: #7b7b85;
+  --text-lighter: #ababab;
+  --blue: #3498db;
+  --green: #27ae60;
+  --yellow: #feca57;
+  --red: #c0392b;
+  --white: #ffffff;
+  --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+  --mobirise: 'mobirise';
+}
+
 @media (prefers-color-scheme: light) {
   :root {
       --background-color: #f7f6ee;
