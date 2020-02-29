@@ -54,7 +54,7 @@ body {
 }
 .hero-image {
   height: 100vh;
-  background-image: url("/img/back-hero2.jpg");
+  background-image: url('/img/back-hero2.jpg');
   overflow: hidden;
   background-size: 110% 110%;
   background-repeat: no-repeat;
