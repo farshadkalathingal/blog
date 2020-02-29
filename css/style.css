@@ -107,7 +107,7 @@ body {
   background: #fff;
   height: 3px;
   width: 50px;
-  margin-left: 55px;
+  margin-left: 65px;
   display: block;
   transform: translateY(-10px);
 }
@@ -556,6 +556,9 @@ background-color:#FCAF45
 }
 .hero-text h2 {
   font-size: 2rem;
+}
+.hero-text h2::after {
+  margin-left: 55px;
 }
 .hero-text h1 {
   font-size: 6rem;
