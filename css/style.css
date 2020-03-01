@@ -262,6 +262,51 @@ body {
 /*---------------- Portfolio --------------------*/
 
 
+#portfolios .card {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-rows: 290px 240px;
+  grid-template-areas: "image" "text";
+
+  max-width: 300px;
+  border-radius: 10px;
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#portfolios .card:hover {
+  transform: scale(1.05);
+
+}
+
+#portfolios .card .card-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 100%;
+  overflow: hidden !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+#portfolios .card .card-text {
+  grid-area: text;
+  margin: 2rem;
+}
+#portfolios .card .card-text h1 {
+  font-size: 2rem;
+}
+#portfolios .card .card-text p {
+  font-size: .8rem;
+}
+
+
+/*--------------- services-------------------------*/
 
 .card {
   margin-top: 50px;
@@ -269,7 +314,7 @@ body {
   margin-right: auto;
   display: block;
   padding: 2rem 0;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
   border: var(--text) 1px solid;
 }
 .card:hover {
@@ -283,7 +328,7 @@ body {
   margin-right: auto;
 }
 
-/*--------------- services-------------------------*/
+
 
 .service-text {
   margin-top: 50px;
